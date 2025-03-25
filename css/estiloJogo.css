@@ -1,0 +1,98 @@
+#fleex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+  }
+  
+  .tabuleiro {
+    margin: 0 auto;
+    width: 320px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .celula {
+    margin: 4px 4px;
+    background-color: green;
+    width: 90px;
+    height: 90px;
+  }
+  
+  .oculto{
+    display: none;
+  }
+  
+  
+  .celula.xis::before,
+  .celula.xis::after {
+    margin-top: 35px;
+    content: "";
+    height: 15px;
+    width: 90px;
+    background: white;
+    position: absolute;
+  }
+  
+  .celula.xis::before{
+    transform: rotate(45deg);
+  }
+  
+  .celula.xis::after {
+    transform: rotate(-45deg);
+  }
+  
+  /* circulo */
+  .celula.circulo::before,
+  .celula.circulo::after{
+    content: "";
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 70px;
+    width: 70px;
+    background: white;
+    position: absolute;
+    border-radius: 50%;
+  }
+  
+  .tabuleiro.circulo .celula:not(.xis):not(.circulo):hover::after{
+    content: "O";
+    margin-top: 2px;
+    margin-left: 15px;
+    font-size:80px;
+  }
+  .tabuleiro.xis .celula:not(.xis):not(.circulo):hover::after{
+    content: "X";
+    margin-top: 2px;
+    margin-left: 15px;
+    font-size:80px;
+  }
+  #save{
+    background-color: lightgreen;
+    width: 150px;
+    font-size:30px;
+    border: black solid 1px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
+  }
+  button{
+    background-color: green;
+    width: 150px;
+    font-size:30px;
+    border: black solid 1px;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  #vencedor{
+    width: 250px;
+    margin: 0 auto;
+  }
+  .centro{
+    margin: 0 auto;
+    width: 100vw;
+  }

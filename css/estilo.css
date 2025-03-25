@@ -1,0 +1,139 @@
+
+
+
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+#irTopo{
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    right:10px;
+    bottom:10px;
+}
+header{
+    background-color: #0A5517; 
+    margin: 0;    
+    background-image: radial-gradient(#19882C,#025310); 
+    color: white;    
+    border-width: 1px;
+    border-style:solid;
+    display: flex;
+    justify-content: space-between;
+}
+input, select{
+    padding: 5px;
+    border-radius: 10px;
+}
+.perfil{
+    text-align: center;
+}
+.perfil > img{
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+}
+form > p::before{
+    content: "*";
+    color:red;
+}
+form > button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #1e8f2f;
+    font-weight: 700;
+    font-size: 1rem;
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+}
+button:hover{
+    cursor: pointer;
+}
+#login{
+    align-self: flex-end;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+h1{
+    padding: 5%; 
+    margin: 0;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+
+nav, main, section{
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+nav{
+    flex: 10%;
+}
+
+main{
+    flex: 60%;
+}
+
+section{
+    flex: 20%;
+}
+
+li:hover{
+    background-color: lightblue;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    
+}
+
+li{
+   border-bottom-color:  black;
+   border-bottom-style: solid;
+   border-bottom-width: 1px;
+   width: 100%;
+   padding: 10px;
+   margin-top: 10px;
+
+}
+
+table{
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+tr,td,th{
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.btn {
+    border:1px black solid;
+    border-radius: 10px;
+    background-color: grey;
+    padding: 5px;
+}
+
+
+
+@media (max-width: 768px) {
+    .content{
+      flex-direction: column;
+    }
+}
